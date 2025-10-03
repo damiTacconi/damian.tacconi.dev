@@ -1,0 +1,70 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "experience": "Experiencia",
+        "skills": "Habilidades",
+        "about": "Sobre mí"
+    },
+    "presentation": {
+        "title": "Hola, soy ",
+        "description": "+5 años de experiencia. Tecnólogo en Análisis y Desarrollo de Software. Apasionado por la tecnología y el diseño.",
+        "linkedin": "LinkedIn",
+        "email": "Email",
+        "download_cv": "Descargar CV",
+        "cv_path": "assets/docs/cv/spanish/CV_Damian_Tacconi.pdf"
+    },
+    "experience": {
+        "title": "Experiencia laboral",
+        "artekium": {
+            "date": "Septiembre 2025",
+            "position": ".NET Developer",
+            "company": "ARTEKIUM",
+            "description_1": "Actualmente me desempeño como <strong>.NET Developer</strong> en una <strong>aplicación de seguros de inversión</strong>.",
+            "description_2": "Desarrollo y mantenimiento de <strong>servicios backend</strong> con <strong>ASP.NET Core</strong>, <strong>Entity Framework Core</strong> y <strong>SQL Server</strong>.",
+            "description_3": "Colaboración en el <strong>frontend</strong> utilizando las últimas versiones de <strong>Angular</strong>."
+        },
+        "urbetrack": {
+            "date": "Mayo 2023",
+            "position": ".NET Developer",
+            "company": "URBETRACK",
+            "description_1": "Colaboré como <strong>backend developer</strong> en plataforma de <strong>logística</strong> y <strong>administración de flota urbana</strong>.",
+            "description_2": "<strong>Migración</strong> de código <strong>legacy</strong> a <strong>microservicios</strong> con <strong>Clean Architecture</strong> y enfoque en <strong>Domain Driven Design (DDD)</strong>.",
+            "description_3": "<strong>Corrección de bugs críticos</strong> para mantener el sistema estable y <strong>mejora de performance</strong> en puntos clave.",
+            "description_4": "<strong>Rediseño de módulos legacy</strong> para evitar circularidad y código spaghetti, aplicando <strong>DDD</strong> y simplificando el código."
+        },
+        "wenance": {
+            "date": "Noviembre 2022",
+            "position": "Backend Engineer",
+            "company": "WENANCE",
+            "description_1": "Colaboré como <strong>backend engineer</strong> en el desarrollo de una <strong>aplicación de créditos online</strong>. Apliqué <strong>mejoras técnicas</strong> y <strong>tests unitarios</strong> en cada desarrollo, para darle más <strong>seguridad</strong> al sistema."
+        },
+        "conexia": {
+            "date": "Noviembre 2021",
+            "position": "Full-Stack Developer",
+            "company": "CONEXIA",
+            "description_1": "Proyecto para obra social con <strong>microservicios</strong> — rol <strong>full-stack</strong>.",
+            "description_2": "<strong>Mejora de performance</strong> y nuevas funcionalidades: <strong>optimización de queries</strong>, <strong>refactorización</strong> y adopción de <strong>Spring Batch</strong> para procesamiento masivo de datos.",
+            "description_3": "<strong>Frontend</strong>: nuevas vistas, ajustes de <strong>estilos</strong> y <strong>corrección de bugs</strong> para mejorar la <strong>experiencia de usuario</strong>."
+        },
+        "avalith": {
+            "date": "Febrero 2020",
+            "position": "Full-Stack Developer",
+            "company": "AVALITH",
+            "description_1": "Desarrollo de intranet con <strong>React</strong> (UI y componentes reutilizables).",
+            "description_2": "Implementación de <strong>APIs REST y microservicios</strong> para billetera virtual con <strong>.NET, Clean Architecture, CQRS, SQL y Kafka</strong>.",
+            "description_3": "Creación de <strong>web-app para casa de empeños</strong>, definiendo arquitectura, base de datos y pipelines de <strong>CI/CD en Azure</strong>, con <strong>React + .NET</strong>."
+        }
+    },
+    "skills": {
+        "title": "Habilidades"
+    },
+    "about": {
+        "title": "Sobre mí",
+        "paragraph_1": "Soy de Mar del Plata, Argentina. En 2018 me recibí de <strong>Técnico Superior en Programación</strong> en la Universidad Tecnológica Nacional (UTN).",
+        "paragraph_2": "Tengo experiencia en el diseño y desarrollo de microservicios siguiendo arquitecturas limpias y principios de Domain-Driven Design (DDD). He construido APIs REST robustas y escalables, trabajando con bases de datos tanto relacionales (SQL Server, MySQL) como no relacionales (MongoDB).",
+        "paragraph_3": "Además, cuento con experiencia en desarrollo frontend, creando interfaces de usuario atractivas y funcionales a partir de maquetas (UI/UX) y la implementación de componentes reutilizables en frameworks modernos como Angular y React. Mi enfoque está orientado a la construcción de aplicaciones mantenibles, escalables y con una experiencia de usuario de alta calidad."
+    },
+    "footer": {
+        "copyright": "© 2025 Damian Tacconi"
+    }
+}

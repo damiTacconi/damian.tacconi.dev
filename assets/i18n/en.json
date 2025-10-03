@@ -1,0 +1,70 @@
+{
+    "nav": {
+        "home": "Home",
+        "experience": "Experience",
+        "skills": "Skills",
+        "about": "About me"
+    },
+    "presentation": {
+        "title": "Hello, I'm ",
+        "description": "+5 years of experience. Software Analysis and Development Technologist. Passionate about technology and design.",
+        "linkedin": "LinkedIn",
+        "email": "Email",
+        "download_cv": "Download CV",
+        "cv_path": "assets/docs/cv/english/CV_Damian_Tacconi_EN.pdf"
+    },
+    "experience": {
+        "title": "Work Experience",
+        "artekium": {
+            "date": "September 2025",
+            "position": ".NET Developer",
+            "company": "ARTEKIUM",
+            "description_1": "Currently working as a <strong>.NET Developer</strong> in an <strong>investment insurance application</strong>.",
+            "description_2": "Development and maintenance of <strong>backend services</strong> with <strong>ASP.NET Core</strong>, <strong>Entity Framework Core</strong> and <strong>SQL Server</strong>.",
+            "description_3": "Collaboration in the <strong>frontend</strong> using the latest versions of <strong>Angular</strong>."
+        },
+        "urbetrack": {
+            "date": "May 2023",
+            "position": ".NET Developer",
+            "company": "URBETRACK",
+            "description_1": "Collaborated as a <strong>backend developer</strong> in a <strong>logistics</strong> and <strong>urban fleet management</strong> platform.",
+            "description_2": "<strong>Migration</strong> of <strong>legacy</strong> code to <strong>microservices</strong> with <strong>Clean Architecture</strong> and focus on <strong>Domain Driven Design (DDD)</strong>.",
+            "description_3": "<strong>Critical bug fixing</strong> to maintain the system stable and <strong>performance improvement</strong> in key points.",
+            "description_4": "<strong>Redesign of legacy modules</strong> to avoid circularity and spaghetti code, applying <strong>DDD</strong> and simplifying the code."
+        },
+        "wenance": {
+            "date": "November 2022",
+            "position": "Backend Engineer",
+            "company": "WENANCE",
+            "description_1": "Collaborated as a <strong>backend engineer</strong> in the development of an <strong>online credit application</strong>. Applied <strong>technical improvements</strong> and <strong>unit tests</strong> in each development, to give more <strong>security</strong> to the system."
+        },
+        "conexia": {
+            "date": "November 2021",
+            "position": "Full-Stack Developer",
+            "company": "CONEXIA",
+            "description_1": "Project for health insurance with <strong>microservices</strong> — <strong>full-stack</strong> role.",
+            "description_2": "<strong>Performance improvement</strong> and new features: <strong>query optimization</strong>, <strong>refactoring</strong> and adoption of <strong>Spring Batch</strong> for massive data processing.",
+            "description_3": "<strong>Frontend</strong>: new views, <strong>style</strong> adjustments and <strong>bug fixing</strong> to improve the <strong>user experience</strong>."
+        },
+        "avalith": {
+            "date": "February 2020",
+            "position": "Full-Stack Developer",
+            "company": "AVALITH",
+            "description_1": "Development of intranet with <strong>React</strong> (UI and reusable components).",
+            "description_2": "Implementation of <strong>REST APIs and microservices</strong> for virtual wallet with <strong>.NET, Clean Architecture, CQRS, SQL and Kafka</strong>.",
+            "description_3": "Creation of <strong>web-app for pawn shop</strong>, defining architecture, database and <strong>CI/CD pipelines in Azure</strong>, with <strong>React + .NET</strong>."
+        }
+    },
+    "skills": {
+        "title": "Skills"
+    },
+    "about": {
+        "title": "About me",
+        "paragraph_1": "I am from Mar del Plata, Argentina. In 2018 I graduated as a <strong>Senior Programming Technician</strong> at the National Technological University (UTN).",
+        "paragraph_2": "I have experience in the design and development of microservices following clean architectures and Domain-Driven Design (DDD) principles. I have built robust and scalable REST APIs, working with both relational (SQL Server, MySQL) and non-relational (MongoDB) databases.",
+        "paragraph_3": "Additionally, I have experience in frontend development, creating attractive and functional user interfaces from mockups (UI/UX) and implementing reusable components in modern frameworks such as Angular and React. My approach is oriented towards building maintainable, scalable applications with a high-quality user experience."
+    },
+    "footer": {
+        "copyright": "© 2025 Damian Tacconi"
+    }
+}

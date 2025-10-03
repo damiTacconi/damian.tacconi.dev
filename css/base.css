@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --dark-color: #f5f5f5;
+    --dark-background-color: #222;
+    --blue-navy: #3C467B;
+    --blue-gray: #50589C;
+    --blue-medium: #636CCB;
+    --blue-light: #6E8CFB;
+
+    --gradient-dark: linear-gradient(135deg, #232327, #141520);
+    --gradient-mid: linear-gradient(135deg, #50589C, #636CCB);
+    --gradient-light: linear-gradient(135deg, #636CCB, #6E8CFB);
+    --gradient-full: linear-gradient(135deg, #3C467B, #6E8CFB);
+}
+
+html{
+    scroll-behavior:  smooth;
+}
+
+body {
+    font-family: 'Space Mono', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--dark-background-color);
+    color: var(--dark-color);
+    position: relative;
+
+}
+
+footer {
+    margin:0 ;
+    padding: 1rem 0;
+    background-color: #141520;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}

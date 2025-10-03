@@ -1,0 +1,35 @@
+/* General styles */
+@import url(base.css);
+@import url(nav.css);
+@import url(presentation.css);
+@import url(stars.css);
+@import url(about.css);
+@import url(experience.css);
+@import url(skills.css);
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Navigation responsive styles */
+    nav {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+
+    .about {
+        padding: 0;
+    }
+
+    .about > .description {
+        width: 95%;
+    }
+}
+

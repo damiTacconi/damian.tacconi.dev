@@ -1,0 +1,65 @@
+#skills {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 5rem;
+    background-color: #0d0d16;
+    height: 100dvh;
+}
+
+#skills > .title {
+    margin-bottom: 2rem;
+}
+
+.skills-list-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+.skill-item {
+    background-color: var(--dark-color);
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;    
+    color: var(--dark-background-color);
+}
+
+.skill-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.skill-item i {
+    font-size: 1.2em;
+}
+
+/* Icon specific colors */
+.fa-html5 { color: #e34c26; }
+.fa-css3-alt { color: #264de4; }
+.fa-js { color: #c1be28; }
+.fa-js.ts { color: #3178c6; } 
+.fa-react { color: #61dafb; }
+.fa-angular { color: #dd0031; }
+.fa-java { color: #007396; }
+.fa-microsoft { color: #6d29bb; }
+.fa-leaf { color: #6db33f; } /* Spring Boot */
+.fa-database { color: #336791; }
+
+@media(max-width: 465px) {
+    #skills{
+        padding: 0.0;
+        margin-bottom: 5rem;
+        height: fit-content;
+    }
+}

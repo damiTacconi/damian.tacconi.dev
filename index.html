@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damian Tacconi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="name">
+                Damian Tacconi
+            </div>
+            <div class="burger-menu">
+                <div class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" data-lang="nav.home">Inicio</a></li>
+                <li><a href="#experience" data-lang="nav.experience">Experiencia</a></li>
+                <li><a href="#skills" data-lang="nav.skills">Habilidades</a></li>
+                <li><a href="#about" data-lang="nav.about">Sobre mí</a></li>
+                <li class="lang-selector">
+                    <div class="lang-current">
+                        <i class="fas fa-globe"></i>
+                        <span>ES</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="lang-dropdown">
+                        <li data-lang="es" class="active">Español</li>
+                        <li data-lang="en">English</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="presentation">
+            <canvas id="stars"></canvas>
+            <div class="presentation-container">
+                <div class="presentation-details">
+                    <div class="title">
+                        <h1><span class="orange">{</span> Hola, soy <span class="orange">Damian }</span></h1>
+                    </div>
+                    <div class="description">
+                        <p data-lang="presentation.description">+5 años de experiencia. Tecnólogo en Análisis y Desarrollo de Software. Apasionado por la
+                            tecnología y el diseño.</p>
+                    </div>
+                    <div class="links">
+                        <a href="https://www.linkedin.com/in/damian-tacconi/" target="_blank"><i
+                                class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="mailto:damian.tacconi.95@gmail.com" target="_blank"><i class="fas fa-envelope"></i>
+                            Email</a>
+                        <div class="vertical-separator"></div>
+                        <a class="download-cv" href="assets/docs/cv/spanish/CV_Damian_Tacconi.pdf" download><i
+                                class="fa-solid fa-download"></i><span data-lang="presentation.download_cv">Descargar CV</span></a>
+                    </div>
+                </div>
+                <img id="photo-me" src="assets/images/me.png" alt="Damian Tacconi">
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+        <section id="experience">
+            <div class="title">
+                <h2><i class="fas fa-briefcase"></i> <span data-lang="experience.title">Experiencia laboral</span></h2>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-card" data-company="artekium">
+                    <div class="timeline-date" data-lang="experience.artekium.date">Septiembre 2025</div>
+                    <div class="timeline-card-header">
+                        <p data-lang="experience.artekium.position">.NET Developer</p>
+                        <p data-lang="experience.artekium.company">ARTEKIUM</p>
+                    </div>
+                    <div class="timeline-card-content">
+                        <ul>
+                            <li data-lang="experience.artekium.description_1">Actualmente me desempeño como <strong>.NET Developer</strong> en una <strong>aplicación de seguros de
+                                    inversión</strong>.</li>
+                            <li data-lang="experience.artekium.description_2">Desarrollo y mantenimiento de <strong>servicios backend</strong> con <strong>ASP.NET Core</strong>,
+                                <strong>Entity Framework Core</strong> y <strong>SQL Server</strong>.</li>
+                            <li data-lang="experience.artekium.description_3">Colaboración en el <strong>frontend</strong> utilizando las últimas versiones de <strong>Angular</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-card" data-company="urbetrack">
+                    <div class="timeline-date" data-lang="experience.urbetrack.date">Mayo 2023</div>
+                    <div class="timeline-card-header">
+                        <p data-lang="experience.urbetrack.position">.NET Developer</p>
+                        <p data-lang="experience.urbetrack.company">URBETRACK</p>
+                    </div>
+                    <div class="timeline-card-content">
+                        <ul>
+                            <li data-lang="experience.urbetrack.description_1">Colaboré como <strong>backend developer</strong> en plataforma de <strong>logística</strong> y
+                                <strong>administración de flota urbana</strong>.</li>
+                            <li data-lang="experience.urbetrack.description_2"><strong>Migración</strong> de código <strong>legacy</strong> a <strong>microservicios</strong> con <strong>Clean
+                                    Architecture</strong> y enfoque en <strong>Domain Driven Design (DDD)</strong>.</li>
+                            <li data-lang="experience.urbetrack.description_3"><strong>Corrección de bugs críticos</strong> para mantener el sistema estable y <strong>mejora de
+                                    performance</strong> en puntos clave.</li>
+                            <li data-lang="experience.urbetrack.description_4"><strong>Rediseño de módulos legacy</strong> para evitar circularidad y código spaghetti, aplicando
+                                <strong>DDD</strong> y simplificando el código.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-card" data-company="wenance">
+                    <div class="timeline-date" data-lang="experience.wenance.date">Noviembre 2022</div>
+                    <div class="timeline-card-header">
+                        <p data-lang="experience.wenance.position">Backend Engineer</p>
+                        <p data-lang="experience.wenance.company">WENANCE</p>
+                    </div>
+                    <div class="timeline-card-content">
+                        <p data-lang="experience.wenance.description_1">
+                            Colaboré como <strong>backend engineer</strong> en el desarrollo de una <strong>aplicación de créditos
+                                online</strong>.
+                            Apliqué <strong>mejoras técnicas</strong> y <strong>tests unitarios</strong> en cada desarrollo,
+                            para darle más <strong>seguridad</strong> al sistema.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-card" data-company="conexia">
+                    <div class="timeline-date" data-lang="experience.conexia.date">Noviembre 2021</div>
+                    <div class="timeline-card-header">
+                        <p data-lang="experience.conexia.position">Full-Stack Developer</p>
+                        <p data-lang="experience.conexia.company">CONEXIA</p>
+                    </div>
+                    <div class="timeline-card-content">
+                        <ul>
+                            <li data-lang="experience.conexia.description_1">Proyecto para obra social con <strong>microservicios</strong> — rol
+                                <strong>full-stack</strong>.</li>
+                            <li data-lang="experience.conexia.description_2"><strong>Mejora de performance</strong> y nuevas funcionalidades: <strong>optimización de
+                                    queries</strong>, <strong>refactorización</strong> y adopción de <strong>Spring
+                                    Batch</strong> para procesamiento masivo de datos.</li>
+                            <li data-lang="experience.conexia.description_3"><strong>Frontend</strong>: nuevas vistas, ajustes de <strong>estilos</strong> y
+                                <strong>corrección de bugs</strong> para mejorar la <strong>experiencia de
+                                    usuario</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-card" data-company="avalith">
+                    <div class="timeline-date" data-lang="experience.avalith.date">Febrero 2020</div>
+                    <div class="timeline-card-header">
+                        <p data-lang="experience.avalith.position">Full-Stack Developer</p>
+                        <p data-lang="experience.avalith.company">AVALITH</p>
+                    </div>
+                    <div class="timeline-card-content">
+                        <ul>
+                            <li data-lang="experience.avalith.description_1">Desarrollo de intranet con <strong>React</strong> (UI y componentes reutilizables).</li>
+                            <li data-lang="experience.avalith.description_2">Implementación de <strong>APIs REST y microservicios</strong> para billetera virtual con
+                                <strong>.NET, Clean Architecture, CQRS, SQL y Kafka</strong>.
+                            </li>
+                            <li data-lang="experience.avalith.description_3">Creación de <strong>web-app para casa de empeños</strong>, definiendo arquitectura, base
+                                de datos y pipelines de <strong>CI/CD en Azure</strong>, con <strong>React +
+                                    .NET</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="title">
+                <h2><i class="fas fa-tools"></i> Habilidades</h2>
+            </div>
+            <div class="skills-list-container">
+                <div class="skills-list">
+                    <h3>Frontend</h3>
+                    <div class="skill-item"><i class="fab fa-html5"></i> HTML</div>
+                    <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS</div>
+                    <div class="skill-item"><i class="fab fa-js"></i> Javascript</div>
+                    <div class="skill-item"><i class="fab fa-js ts"></i> Typescript</div>
+                    <div class="skill-item"><i class="fab fa-angular"></i> Angular</div>
+                    <div class="skill-item"><i class="fab fa-react"></i> React</div>
+                </div>
+                <div class="skills-list">
+                    <h3>Backend</h3>
+                    <div class="skill-item"><i class="fab fa-microsoft"></i> .NET</div>
+                    <div class="skill-item"><i class="fab fa-microsoft"></i> C#</div>
+                    <div class="skill-item"><i class="fas fa-leaf"></i> Spring Boot</div>
+                    <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+                    <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
+                    <div class="skill-item"><i class="fas fa-database"></i> MongoDB</div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="title">
+                <h2><i class="fas fa-user"></i> <span data-lang="about.title">Sobre mí</span></h2>
+            </div>
+            <div class="description">
+                <p data-lang="about.paragraph_1">Soy de Mar del Plata, Argentina. En 2018 me recibí de <strong>Técnico Superior en Programación</strong> en la Universidad Tecnológica Nacional (UTN).</p>
+                <p data-lang="about.paragraph_2">Tengo experiencia en el diseño y desarrollo de microservicios siguiendo arquitecturas limpias y
+                    principios de Domain-Driven Design (DDD). He construido APIs REST robustas y escalables, trabajando
+                    con bases de datos tanto relacionales (SQL Server, MySQL) como no relacionales (MongoDB).</p>
+                <p data-lang="about.paragraph_3">Además, cuento con experiencia en desarrollo frontend, creando interfaces de usuario atractivas y
+                    funcionales a partir de maquetas (UI/UX) y la implementación de componentes reutilizables
+                    en frameworks modernos como Angular y React. Mi enfoque está orientado a la construcción de
+                    aplicaciones mantenibles, escalables y con una experiencia de usuario de alta calidad.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Damian Tacconi</p>
+    </footer>
+
+    <script src="js/stars.js"></script>
+    <script src="js/translations.js"></script>
+</body>
+
+</html>
