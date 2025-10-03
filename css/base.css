@@ -26,7 +26,7 @@ body {
     background-color: var(--dark-background-color);
     color: var(--dark-color);
     position: relative;
-
+    padding-top: 70px;
 }
 
 footer {
