@@ -1,10 +1,7 @@
 /* Presentation section styles */
 .presentation {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    height: 100dvh;
+    place-items: center;
     background: transparent;
 
     & .title {
@@ -35,14 +32,12 @@
 }
 
 .title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
 #photo-me {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -125,8 +120,8 @@
 @media (max-width: 1258px) {
 
     #photo-me {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 
     .presentation-container {
@@ -143,14 +138,14 @@
 
         & .description {
             text-align: center;
-            width: 60%;
+            width: 95%;
         }
     }
 }
 
 @media(max-width: 665px) {
     .presentation-container .description {
-        width: 80%;
+        width: 95%;
     }
 }
 
@@ -185,14 +180,5 @@
     .links {
         flex-direction: column;
         gap: 10px;
-    }
-
-    .vertical-separator {
-        border: none;
-        border-top: 1px solid #ccc;
-        width: 50px;
-        height: 2px;
-        align-self: center;
-        margin: 8px;
     }
 }

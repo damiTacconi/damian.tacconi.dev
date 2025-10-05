@@ -36,6 +36,13 @@ footer {
     text-align: center;
 }
 
+header{
+    height: calc(100dvh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .title {
     text-align: center;
 }

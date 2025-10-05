@@ -58,7 +58,8 @@
 
 @media(max-width: 465px) {
     #skills{
-        padding: 0.0;
+        padding-left: 0;
+        padding-right: 0;
         margin-bottom: 5rem;
         height: fit-content;
     }
