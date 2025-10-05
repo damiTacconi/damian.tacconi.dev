@@ -33,7 +33,6 @@ body {
         );
     color: var(--dark-color);
     position: relative;
-    padding-top: 70px;
     overflow-x: hidden;
 }
 
@@ -80,7 +79,7 @@ footer {
 }
 
 header{
-    height: calc(100dvh - 70px);
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;

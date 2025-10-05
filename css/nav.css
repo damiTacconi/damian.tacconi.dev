@@ -353,10 +353,6 @@ nav ul li a:hover::after {
         animation: fadeIn 0.3s ease forwards;
     }
 
-    header {
-        height: initial;
-    }
-    
     @keyframes fadeIn {
         to {
             right: 0;
