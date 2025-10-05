@@ -23,10 +23,72 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--dark-background-color);
+    background:
+        linear-gradient(135deg,
+            rgba(33, 30, 54, 0.95) 0%,
+            rgba(15, 10, 25, 0.98) 25%,
+            rgba(20, 15, 30, 0.97) 50%,
+            rgba(10, 8, 20, 0.98) 75%,
+            rgba(0, 0, 0, 0.95) 100%
+        );
     color: var(--dark-color);
     position: relative;
     padding-top: 70px;
+    overflow-x: hidden;
+}
+
+/* Animated gradient background layer */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 10% 20%, rgba(241, 165, 63, 0.08) 0%, transparent 30%),
+        radial-gradient(circle at 90% 30%, rgba(97, 218, 235, 0.06) 0%, transparent 35%),
+        radial-gradient(circle at 30% 70%, rgba(109, 179, 63, 0.05) 0%, transparent 30%),
+        radial-gradient(circle at 70% 80%, rgba(221, 0, 49, 0.05) 0%, transparent 35%),
+        radial-gradient(circle at 50% 50%, rgba(60, 70, 123, 0.08) 0%, transparent 50%);
+    animation: gradientShift 20s ease infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Subtle dot pattern overlay */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(circle, rgba(241, 165, 63, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+@keyframes gradientShift {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    25% {
+        transform: translate(5%, -5%) scale(1.05);
+        opacity: 0.9;
+    }
+    50% {
+        transform: translate(-3%, 3%) scale(1.02);
+        opacity: 0.95;
+    }
+    75% {
+        transform: translate(4%, 2%) scale(1.03);
+        opacity: 0.92;
+    }
 }
 
 footer {
@@ -41,6 +103,13 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+main {
+    position: relative;
+    z-index: 1;
 }
 
 .title {

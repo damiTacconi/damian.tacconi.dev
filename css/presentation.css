@@ -58,35 +58,57 @@
 .links a,
 .download-cv {
     text-decoration: none;
-    color: #333;
     display: flex;
     align-items: center;
-    gap: 5px;
-    padding: 8px 12px;
-    border-radius: 4px;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: 8px;
     transition: all 0.3s ease;
     border: none;
+    background: rgba(30, 37, 48, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: #e0e0e0;
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
 }
 
-.links a {
-    background-color: var(--dark-color);
-    color: var(--dark-background-color);
+.links a::before,
+.download-cv::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(241, 165, 63, 0.1), transparent);
+    transition: left 0.5s ease;
 }
 
-.links a:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+.links a:hover::before,
+.download-cv:hover::before {
+    left: 100%;
 }
 
+.links a:hover,
 .download-cv:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(241, 165, 63, 0.15);
+    border-color: rgba(241, 165, 63, 0.3);
+    background: rgba(30, 37, 48, 0.8);
     cursor: pointer;
 }
 
 .links a i {
     font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.links a:hover i,
+.download-cv:hover i {
+    transform: scale(1.1);
 }
 
 .vertical-separator {
@@ -97,8 +119,7 @@
 }
 
 .download-cv {
-    background-color: var(--dark-color);
-    color: var(--dark-background-color);
+    border-color: rgba(241, 165, 63, 0.2);
 }
 
 /* Social media icon colors */
