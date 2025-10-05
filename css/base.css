@@ -24,19 +24,20 @@ body {
     padding: 0;
     box-sizing: border-box;
     background:
-        linear-gradient(135deg,
-            rgba(33, 30, 54, 0.95) 0%,
-            rgba(15, 10, 25, 0.98) 25%,
-            rgba(20, 15, 30, 0.97) 50%,
-            rgba(10, 8, 20, 0.98) 75%,
-            rgba(0, 0, 0, 0.95) 100%
+        linear-gradient(180deg,
+            #0a0e27 0%,
+            #0f1419 20%,
+            #121820 40%,
+            #0d1117 60%,
+            #080b14 80%,
+            #000000 100%
         );
     color: var(--dark-color);
     position: relative;
     overflow-x: hidden;
 }
 
-/* Animated gradient background layer */
+/* Subtle professional gradient overlay */
 body::before {
     content: "";
     position: fixed;
@@ -45,16 +46,14 @@ body::before {
     width: 100%;
     height: 100%;
     background:
-        radial-gradient(circle at 10% 20%, rgba(241, 165, 63, 0.08) 0%, transparent 30%),
-        radial-gradient(circle at 90% 30%, rgba(97, 218, 235, 0.06) 0%, transparent 35%),
-        radial-gradient(circle at 30% 70%, rgba(109, 179, 63, 0.05) 0%, transparent 30%),
-        radial-gradient(circle at 70% 80%, rgba(221, 0, 49, 0.05) 0%, transparent 35%),
-        radial-gradient(circle at 50% 50%, rgba(60, 70, 123, 0.08) 0%, transparent 50%);
+        radial-gradient(ellipse at 20% 10%, rgba(30, 58, 138, 0.025) 0%, transparent 40%),
+        radial-gradient(ellipse at 80% 20%, rgba(17, 24, 39, 0.03) 0%, transparent 45%),
+        radial-gradient(ellipse at 50% 80%, rgba(15, 23, 42, 0.025) 0%, transparent 50%);
     pointer-events: none;
     z-index: 0;
 }
 
-/* Subtle dot pattern overlay */
+/* Minimal grid pattern overlay */
 body::after {
     content: "";
     position: fixed;
@@ -63,18 +62,19 @@ body::after {
     width: 100%;
     height: 100%;
     background-image:
-        radial-gradient(circle, rgba(241, 165, 63, 0.03) 1px, transparent 1px);
-    background-size: 50px 50px;
+        linear-gradient(rgba(55, 65, 81, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(55, 65, 81, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
     pointer-events: none;
     z-index: 0;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 
 footer {
     margin:0 ;
     padding: 1rem 0;
-    background-color: #0d0e18;
+    background-color: #000000;
     text-align: center;
 }
 
