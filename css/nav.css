@@ -220,7 +220,7 @@ nav ul li a:hover::after {
             rgba(20, 25, 35, 0.98) 100%);
         backdrop-filter: blur(20px);
         border-left: 1px solid rgba(241, 165, 63, 0.2);
-        align-items: center;
+        align-items: stretch;
         justify-content: center;
         padding: 3rem 2rem;
         transition: right 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -290,7 +290,7 @@ nav ul li a:hover::after {
     }
 
     .lang-selector {
-        width: 200px;
+        width: 100%;
     }
 
     .lang-current {
