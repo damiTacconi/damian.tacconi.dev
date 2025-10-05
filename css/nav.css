@@ -190,15 +190,15 @@ nav ul li a:hover::after {
         display:flex;
         flex-direction: column;
         gap: 5rem;
-        position: fixed;
-        top: 60px;
+        position: absolute;
+        top: 0px;
         right: -100%;
         width: 70%;
         height: calc(100vh - 60px);
         background-color: #000000;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         padding: 2rem;
         transition: right 0.3s ease-in-out;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
@@ -223,4 +223,5 @@ nav ul li a:hover::after {
     .lang-selector.active .lang-dropdown {
         display: block;
     }
+
 }
