@@ -2,7 +2,7 @@ const canvas = document.getElementById("stars");
 const ctx = canvas.getContext("2d");
 
 let stars = [];
-let numStars = 500;
+let numStars = 100;
 
 function resizeCanvas() {
     canvas.width = canvas.offsetWidth;
