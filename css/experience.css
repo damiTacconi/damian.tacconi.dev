@@ -189,6 +189,50 @@
     color: #e8e8e8;
 }
 
+/* Read more functionality */
+.timeline-card-content.collapsed ul li:nth-child(n+3) {
+    display: none;
+}
+
+.timeline-card-content.collapsed p:nth-of-type(n+2) {
+    display: none;
+}
+
+.read-more-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    color: #f1a53f;
+    border: 1px solid #f1a53f;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    align-self: flex-start;
+}
+
+.read-more-btn:hover {
+    background: rgba(241, 165, 63, 0.1);
+    transform: translateX(3px);
+    box-shadow: 0 2px 8px rgba(241, 165, 63, 0.2);
+}
+
+.read-more-btn i {
+    margin-left: 0.3rem;
+    transition: transform 0.3s ease;
+}
+
+.read-more-btn:hover i {
+    transform: translateX(3px);
+}
+
+.read-more-btn.expanded i {
+    transform: rotate(180deg);
+}
+
 /* Responsive Design */
 @media screen and (max-width: 900px) {
     .timeline-container::before {

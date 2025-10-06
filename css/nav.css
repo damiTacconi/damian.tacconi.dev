@@ -181,7 +181,7 @@ nav ul li a:hover::after {
 
 .lang-dropdown {
     position: absolute;
-    top: 100%;
+    top: calc(100% + 0.5rem);
     right: 0;
     background: rgba(20, 25, 35, 0.98);
     backdrop-filter: blur(15px);
@@ -190,31 +190,12 @@ nav ul li a:hover::after {
     border: 1px solid rgba(241, 165, 63, 0.2);
     padding: 0.5rem;
     min-width: 140px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+    display: none;
     z-index: 200;
-    pointer-events: none;
-    margin-top: 0.5rem;
-}
-
-/* Create an invisible bridge between selector and dropdown */
-.lang-dropdown::before {
-    content: '';
-    position: absolute;
-    top: -0.5rem;
-    left: 0;
-    right: 0;
-    height: 0.5rem;
-    background: transparent;
 }
 
 .lang-selector:hover .lang-dropdown {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    pointer-events: auto;
+    display: block;
 }
 
 .lang-dropdown li {
@@ -374,8 +355,12 @@ nav ul li a:hover::after {
         border: 1px solid rgba(241, 165, 63, 0.1);
     }
 
+     .lang-dropdown {
+        transition: none;
+    }
+    
     .lang-selector:hover .lang-dropdown {
-        display: none;
+        display: block;
     }
 
     .lang-selector.active .lang-dropdown {

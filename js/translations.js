@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         const dateElements = document.querySelectorAll('.timeline-date');
-        
+
         dateElements.forEach(dateElement => {
             const originalText = dateElement.textContent.trim();
             const translatedDate = translateDate(originalText, lang, monthTranslations);
@@ -198,17 +198,17 @@ document.addEventListener('DOMContentLoaded', function () {
         if (parts.length === 2) {
             const month = parts[0];
             const year = parts[1];
-            
+
             // Find the Spanish month and translate it
             const targetMonths = monthTranslations[lang];
-            
+
             for (const [spanishMonth, translatedMonth] of Object.entries(targetMonths)) {
                 if (month === spanishMonth) {
                     return `${translatedMonth} ${year}`;
                 }
             }
         }
-        
+
         // If no translation found, return original
         return dateString;
     }
@@ -233,4 +233,67 @@ document.addEventListener('DOMContentLoaded', function () {
         // Load translations directly
         updatePageLanguage(savedLanguage);
     }
+    function initReadMore() {
+        const timelineCards = document.querySelectorAll('.timeline-card');
+
+        timelineCards.forEach(card => {
+            const content = card.querySelector('.timeline-card-content');
+            const items = content.querySelectorAll('ul li, p');
+
+            // Only add read more button if there are more than 2 items
+            if (items.length > 2) {
+                // Add collapsed class initially
+                content.classList.add('collapsed');
+
+                // Create read more button
+                const readMoreBtn = document.createElement('button');
+                readMoreBtn.className = 'read-more-btn';
+                readMoreBtn.setAttribute('data-lang-key', 'experience.read_more');
+
+                // Get current language dynamically
+                const currentLang = localStorage.getItem('selectedLanguage') || 'es';
+                const btnText = currentLang === 'es' ? 'Leer más' : 'Read more';
+                readMoreBtn.innerHTML = `${btnText} <i class="fas fa-chevron-down"></i>`;
+
+                content.appendChild(readMoreBtn);
+
+                // Add click event
+                readMoreBtn.addEventListener('click', function () {
+                    const isCollapsed = content.classList.contains('collapsed');
+                    const lang = localStorage.getItem('selectedLanguage') || 'es'; // ✅ always up-to-date
+
+                    if (isCollapsed) {
+                        content.classList.remove('collapsed');
+                        readMoreBtn.classList.add('expanded');
+                        const expandText = lang === 'es' ? 'Leer menos' : 'Read less';
+                        readMoreBtn.innerHTML = `${expandText} <i class="fas fa-chevron-down"></i>`;
+                    } else {
+                        content.classList.add('collapsed');
+                        readMoreBtn.classList.remove('expanded');
+                        const collapseText = lang === 'es' ? 'Leer más' : 'Read more';
+                        readMoreBtn.innerHTML = `${collapseText} <i class="fas fa-chevron-down"></i>`;
+                    }
+                });
+            }
+        });
+    }
+
+    // Call initReadMore after page loads
+    initReadMore();
+
+    // Update read more buttons when language changes
+    const originalUpdatePageLanguage = updatePageLanguage;
+    updatePageLanguage = async function (lang) {
+        await originalUpdatePageLanguage(lang);
+
+        // Update read more button texts dynamically
+        const readMoreBtns = document.querySelectorAll('.read-more-btn');
+        readMoreBtns.forEach(btn => {
+            const isExpanded = btn.classList.contains('expanded');
+            const text = isExpanded
+                ? (lang === 'es' ? 'Leer menos' : 'Read less')
+                : (lang === 'es' ? 'Leer más' : 'Read more');
+            btn.innerHTML = `${text} <i class="fas fa-chevron-down"></i>`;
+        });
+    };
 });

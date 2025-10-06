@@ -15,6 +15,8 @@
     },
     "experience": {
         "title": "Work Experience",
+        "read_more": "Read more",
+        "read_less": "Read less",
         "artekium": {
             "date": "September 2025",
             "position": ".NET Developer",
